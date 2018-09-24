@@ -104,7 +104,7 @@ void List::insertAsLast(double x) {
         while (ptr->next_ != NULL) {
             ptr = ptr->next_;
         }
-        Node* lastPtr = new Node(x, ptr->next_);
+        Node* lastPtr = new Node(x);
     }
 }
 
