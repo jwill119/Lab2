@@ -2,8 +2,6 @@
 
 // tom bailey   0740  5 oct 2010
 // Declaration of the List class.
-//
-// Modified by Jacob Williams for COSC 2030 Lab 2
 
 // A List stores and manages a sequence of doubles.
 
@@ -46,13 +44,17 @@ public:
 	const List & operator=(const List & other);
 
 	// Test for equality
-	bool List & operator==(const List &rhs);
+	bool operator==(const List &rhs);
+
 
 	//*** Accessors ***
 
 	// post: true has been returned just if this List is
 	//         empty.
 	bool empty() const;
+    
+    // Check size of the list
+    int size();
 
 	// post: the doubles in this List have been written to
 	//         outfile.

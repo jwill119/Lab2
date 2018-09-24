@@ -1,9 +1,7 @@
 // LinkedList.cpp
-// Original file:
+
 // tom bailey   0745  5 oct 2010
 // Definition of methods for the List class.
-//
-// Modified by Jacob Williams for COSC 2030 Lab 02
 
 #include "LinkedList.h"
 
@@ -45,11 +43,11 @@ const List & List::operator=(const List & other)
 }
 
 bool List::operator==(const List &rhs){
-    if(this.size() == 0 && rhs.size() == 0){return true;}//both empty
-    if(this.size() != rhs.size()){return false;}//sizes not the same
+//    if(size() == 0 && rhs.size() == 0){return true;}//both empty
+//    if(size() != rhs.size()){return false;}//sizes not the same
 
-    Node * lptr = this->next_;
-    Node * rptr = rhs->next_;
+ //   Node * lptr = this->next_;
+/*   Node * rptr = rhs->next_;
 		Double lEntry = lptr->entry_;
     Double rEntry = rptr->entry_;
 		while (lptr != NULL && rptr != NULL)
@@ -62,16 +60,41 @@ bool List::operator==(const List &rhs){
       lEntry = lptr->entry_;
       rEntry = rptr->entry_;
 		}
-
-  	return true;
+*/
+  	return true; 
 }
-
 
 bool List::empty() const
 {
 	return first_ == NULL;
 }
 
+
+int List::size() {
+    int count = 0;
+    Node *ptr = first_;
+    while (ptr != NULL) {
+        ptr = ptr->next_;
+        count++;
+    }
+    return count;
+}
+
+/*
+int List::size() {
+    if (empty()) {
+        return 0;
+    } else {
+        int count = 1;
+		Node * ptr = first_;
+        while (ptr != NULL) {
+            ptr = ptr->next_;
+            count++;
+        } 
+        return count;
+    }
+}
+*/
 
 void List::insertAsFirst(double x)
 {
