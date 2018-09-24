@@ -65,13 +65,12 @@ bool List::operator==(const List &rhs) {
 
 double List::sum() {
     double theSum = 0;
-
+    double temp;
     Node *ptr = first_;
-    double temp = ptr->entry_;
     while (ptr != NULL) {
+        temp = ptr->entry_;
         theSum += temp;
         ptr = ptr->next_;
-        temp = ptr->entry_;
     }
     return theSum;
 }
