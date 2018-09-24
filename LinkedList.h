@@ -47,6 +47,9 @@ public:
 	bool operator==(const List &rhs);
 
 
+    // Sum method: Sums across all doubles in the linked list (if empty returns 0)
+    double sum();
+
 	//*** Accessors ***
 
 	// post: true has been returned just if this List is

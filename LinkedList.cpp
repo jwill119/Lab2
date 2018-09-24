@@ -42,12 +42,11 @@ const List & List::operator=(const List & other)
 	return *this;
 }
 
-bool List::operator==(const List &rhs){
-//    if(size() == 0 && rhs.size() == 0){return true;}//both empty
-//    if(size() != rhs.size()){return false;}//sizes not the same
-
- //   Node * lptr = this->next_;
-/*   Node * rptr = rhs->next_;
+bool List::operator==(const List &rhs) {
+    /*
+    if(size() == 0 && rhs.size() == 0){return true;}//both empty
+    Node * lptr = this->next_;
+    Node * rptr = rhs->next_;
 		Double lEntry = lptr->entry_;
     Double rEntry = rptr->entry_;
 		while (lptr != NULL && rptr != NULL)
@@ -62,6 +61,19 @@ bool List::operator==(const List &rhs){
 		}
 */
   	return true; 
+}
+
+double List::sum() {
+    double theSum = 0;
+
+    Node *ptr = first_;
+    double temp = ptr->entry_;
+    while (ptr != NULL) {
+        theSum += temp;
+        ptr = ptr->next_;
+        temp = ptr->entry_;
+    }
+    return theSum;
 }
 
 bool List::empty() const
