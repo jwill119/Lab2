@@ -91,25 +91,21 @@ int List::size() {
     return count;
 }
 
-/*
-int List::size() {
-    if (empty()) {
-        return 0;
-    } else {
-        int count = 1;
-		Node * ptr = first_;
-        while (ptr != NULL) {
-            ptr = ptr->next_;
-            count++;
-        } 
-        return count;
-    }
-}
-*/
-
 void List::insertAsFirst(double x)
 {
 	first_ = new Node(x, first_);
+}
+
+void List::insertAsLast(double x) {
+    if (empty()) {
+        insertAsFirst(x); // lazy, but effective
+    } else {
+        Node *ptr = first_;
+        while (ptr->next_ != NULL) {
+            ptr = ptr->next_;
+        }
+        Node* lastPtr = new Node(x, ptr->next_);
+    }
 }
 
 

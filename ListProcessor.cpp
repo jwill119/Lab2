@@ -34,6 +34,11 @@ int main()
     cout << "horses size: " << horses.size() << endl;
     cout << "the sums (cow, horse) = (" << cows.sum() << ", " << horses.sum() << ")." << endl << endl;
 
+    cows.insertAsLast(100.00);
+    cout << "cows list with inserted as last: " << cows << endl;
+    cout << "cows sum: " << cows.sum() << endl;
+    cout << "cows size: " << cows.size() << endl << endl;
+
 	horses.removeFirst();
 	horses.insertAsFirst(5.67);
 	cows.insertAsFirst(6.78);

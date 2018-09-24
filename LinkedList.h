@@ -70,6 +70,9 @@ public:
 	//         List.
 	void insertAsFirst(double x);
 
+    // Insert x as the LAST double in the list. Same as first if started out empty.
+    void insertAsLast(double x);
+
 	// pre:  this List is not empty.
 	// post: the first double in this List has been removed
 	//         from this List and has been returned.
