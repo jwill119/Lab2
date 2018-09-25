@@ -10,3 +10,5 @@ Some explanation behind the makefile:
 - So I decided to learn how to make a Makefile while struggling with the first method
 - But then I was able to compile it so I just left the file as-is and compiled from the command line
 - The compilation syntax: g++ -o Lab2[.exe] ListProcessor.cpp LinkedList.cpp Node.cpp, which seems to work okay
+
+*tl;dr*: Jagadish helped, and ignore the makefile.
