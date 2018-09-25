@@ -54,7 +54,9 @@ int main()
     cout << "The three sizes (cows, horses, pigs) = (" << cows.size() << ", " << horses.size() << ", " << pigs.size() << ")." << endl;
     cout << "sums (cow, horse, pig) = (" << cows.sum() << ", " << horses.sum() << ", " << pigs.sum() << ")." << endl << endl;
 
+    cows.insertAsLast(5);
 	pigs = cows;
+    horses.insertAsLast(-23.8);
 	cout << "cows list  :  " << cows << endl;
 	cout << "horses list:  " << horses << endl;
 	cout << "pigs list  :  " << pigs << endl;
