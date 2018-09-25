@@ -5,6 +5,8 @@
 // tom bailey   1030  27 jan 2012
 // Exercise the List class with verbose Node constructor
 //   and destructor.
+//
+//   Modified by Jacob Williams for COSC 2030 lab 2.
 
 #include "LinkedList.h"
 

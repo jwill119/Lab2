@@ -7,6 +7,8 @@
 
 // This version uses a pointer to the first Node of a
 //   singly linked list of Nodes.
+//
+//   Modified by Jacob Williams for COSC 2030 lab 2.
 
 
 #ifndef _LINKED_LIST_H_

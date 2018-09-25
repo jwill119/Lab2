@@ -2,6 +2,8 @@
 
 // tom bailey   0745  5 oct 2010
 // Definition of methods for the List class.
+//
+// Modified by Jacob Williams for COSC 2030 lab 2
 
 #include "LinkedList.h"
 

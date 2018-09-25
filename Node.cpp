@@ -1,6 +1,8 @@
 // Node.cpp
 // tom bailey   1050  31 jan 2011
 // Definitions of the Node class methods
+//
+// Modified by Jacob Williams for COSC 2030 lab 2.
 
 
 #include "Node.h"

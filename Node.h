@@ -12,6 +12,8 @@
 
 // The default constructor and assignment operator are
 // declared private so they cannot be called.
+//
+// Modified by Jacob Williams for COSC 2030 lab 2.
 
 #ifndef _NODE_H_
 #define _NODE_H_
